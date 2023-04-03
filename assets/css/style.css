@@ -102,4 +102,6 @@ aside::-webkit-scrollbar {
 main {
   background-color: var(--bg-cards);
   width: 100vw;
+  margin: 1rem;
+  border-radius: 1rem;
 }

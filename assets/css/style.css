@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+}
+
+aside {
+  width: 100vw;
+  max-width: 380px;
+  height: 100vh;
+
+  overflow-y: scroll;
+}
+
+aside::-webkit-scrollbar {
+  display: none;
+}
+
+.me {
+  padding-top: 2rem;
+  margin: 1rem;
+  height: 292px;
+  width: 348px;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--bg-cards);
+}
+
+.me img {
+  display: block;
+  width: 128px;
+  margin: 0 auto;
+  border: 2px solid rgb(4, 223, 4);
+  border-radius: 50%;
+}
+
+.me h2 {
+  padding-top: 1rem;
+}
+
+.me h2, h5 {
+  text-align: center;
+}
+
+.options {
+  padding-top: 2rem;
+  margin: 1rem;
+  width: 348px;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--bg-cards);
+}
+
+.tecnologies {
+  padding-top: 2rem;
+  margin: 1rem;
+  width: 348px;
+  height: 208px;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--bg-cards);
+}
+
+.experiences {
+  padding-top: 2rem;
+  margin: 1rem;
+  width: 348px;
+  height: 349px;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--bg-cards);
+}
+
+.education {
+  padding-top: 2rem;
+  margin: 1rem;
+  width: 348px;
+  height: 352px;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--bg-cards);
+}
+
+main {
+  background-color: var(--bg-cards);
+  width: 100vw;
+}

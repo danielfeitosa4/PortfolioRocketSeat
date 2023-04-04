@@ -7,8 +7,10 @@
 :root {
   --body-bg-color: #22212C;
   --text-color: #837E9F;
+  --text-color-hover: #b8b5ca;
   --bg-cards: #302F3D;
   --bg-techs: #CB92B1;
+  --bg-techs-hover: #975b7c;
 }
 
 body {
@@ -61,7 +63,11 @@ aside::-webkit-scrollbar {
 }
 
 .options {
-  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
   margin: 1rem;
   width: 348px;
   border: none;
@@ -69,8 +75,33 @@ aside::-webkit-scrollbar {
   background-color: var(--bg-cards);
 }
 
+
+.options li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  cursor: default;
+}
+
+.options li:hover {
+  color: var(--text-color-hover);
+}
+
+.options li i:hover {
+  color: var(--text-color);
+}
+
 .tecnologies {
-  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 30px;
+
+  color: var(--body-bg-color);
+  padding: 1rem;
   margin: 1rem;
   width: 348px;
   height: 208px;
@@ -78,9 +109,35 @@ aside::-webkit-scrollbar {
   border-radius: 1rem;
   background-color: var(--bg-cards);
 }
+  
+.back-div{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-techs);
+  border-radius: 2rem;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.back-div:hover {
+  background-color: var(--bg-techs-hover);
+  color: #fff;
+  cursor: pointer;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 3 / 1 / 4 / 2; }
+.div8 { grid-area: 3 / 2 / 4 / 3; }
+.div9 { grid-area: 3 / 3 / 4 / 4; }
 
 .experiences {
-  padding-top: 2rem;
+  padding: 1rem;
   margin: 1rem;
   width: 348px;
   height: 349px;
@@ -89,8 +146,20 @@ aside::-webkit-scrollbar {
   background-color: var(--bg-cards);
 }
 
+.experiences ul {
+  padding: 1.5rem;
+}
+
+.experiences ul li {
+  color: var(--text-color-hover);
+}
+
+.experiences small {
+  margin-bottom: 0.5rem;
+}
+
 .education {
-  padding-top: 2rem;
+  padding: 1rem;
   margin: 1rem;
   width: 348px;
   height: 352px;
@@ -99,9 +168,147 @@ aside::-webkit-scrollbar {
   background-color: var(--bg-cards);
 }
 
+.education ul {
+  padding: 1.5rem;
+}
+
+.education ul li {
+  color: var(--text-color-hover);
+}
+
+.education small {
+  margin-bottom: 0.5rem;
+}
+
 main {
-  background-color: var(--bg-cards);
   width: 100vw;
   margin: 1rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-cards);
   border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.projects a {
+  text-decoration: none;
+  color: var(--text-color-hover);
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+
+.card-default {
+  width: 461px;
+  height: 195px;
+  background-color: var(--bg-cards);
+  border-radius: 1rem;
+  padding: 25px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-tec-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1 p {
+  margin: 22px 0 40px 0;
+}
+
+.card1 .info span {
+  margin: 0 1.5rem 0 0.2rem;
+}
+
+.card1 .tec-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card1 .tec-card .circle {
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+
+/* CARD 2 */
+
+.card2 p {
+  margin: 22px 0 40px 0;
+}
+
+.card2 .info span {
+  margin: 0 1.5rem 0 0.2rem;
+}
+
+.card2 .tec-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card2 .tec-card .circle {
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+
+/* CARD 3 */
+
+.card3 p {
+  margin: 22px 0 40px 0;
+}
+
+.card3 .info span {
+  margin: 0 1.5rem 0 0.2rem;
+}
+
+.card3 .tec-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card3 .tec-card .circle {
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+
+
+.posts {
+  background-color: var(--bg-cards);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 1.6rem;
+}
+
+.comments {
+  background-color: var(--bg-cards);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 1.6rem;
+  height: 201px;
 }

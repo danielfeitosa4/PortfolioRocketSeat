@@ -267,7 +267,7 @@ main {
 .card2 .tec-card .circle {
   width: 15px;
   height: 15px;
-  background-color: yellow;
+  background-color: rgb(46, 36, 196);
   border: 2px solid grey;
   border-radius: 50%;
 }
